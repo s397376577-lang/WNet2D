@@ -7,7 +7,9 @@ This repository provides a **minimal, reproducible** implementation of **WNet2D*
 - measure latency/FPS/peak GPU memory with **nvidia-smi "Used" (peak reserved)** or **allocated**.
 
 > Camera-ready tag: **v1.0-camera-ready**
-
+<p align="center">
+  <img src="arch.png" width="720" alt="WNet2D Architecture">
+</p>
 ## 1. Environment
 ```bash
 # Conda (CUDA 11.8)
