@@ -30,19 +30,19 @@ You can customize paths via YAML configs in `configs/`.
 
 ## 3. Train (example: Kvasir-SEG)
 ```bash
-python -m wnet2d.engine.train --cfg configs/kvasir.yaml
+python train.py --cfg kvasir.yaml
 ```
 
 ## 4. Evaluate & export metrics (Dice/IoU/95HD/ASD)
 ```bash
-python -m wnet2d.engine.eval --cfg configs/kvasir.yaml --ckpt checkpoints/wnet2d_kvasir.pth
+python eval.py --cfg kvasir.yaml --ckpt checkpoints/wnet2d_kvasir.pth
 ```
 Metrics are reported per-image and summarized into a CSV. **Distances are computed in pixels**.
 
 ## 5. Efficiency measurement (protocol identical to the paper)
 ```bash
 # default: reserved (nvidia-smi "Used")
-python -m wnet2d.utils.measure --model wnet2d --size 512 --precision fp32 --runs 200 --warmup 50 --report reserved
+python measure.py --model wnet2d --size 512 --precision fp32 --runs 200 --warmup 50 --report reserved
 
 # also possible (for reference only):
 python -m wnet2d.utils.measure --report allocated
