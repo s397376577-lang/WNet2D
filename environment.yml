@@ -7,14 +7,28 @@ dependencies:
   - cudatoolkit=11.8
   - pip
   - pip:
-      - timm>=0.9.12
-      - mamba-ssm>=1.2.0
-      - albumentations>=1.4.3
-      - numpy>=1.24
-      - Pillow>=10.0
-      - tqdm>=4.66
-      - scikit-image>=0.23
-      - medpy>=0.5.1
-      - tensorboardX>=2.6
-      - opencv-python>=4.9
-      - pyyaml>=6.0.1
+        albumentations==1.4.7
+        dynamic_network_architectures==0.4.2
+        einops==0.3.0
+        fvcore==0.1.5.post20221221
+        mamba_ssm==1.2.0
+        matplotlib==3.10.6
+        medpy==0.5.2
+        ml_collections==0.1.1
+        nni==3.0
+        nnunetv2==2.6.2
+        numpy==2.3.3
+        opencv_python==4.8.1.78
+        opencv_python_headless==4.12.0.88
+        pandas==2.3.2
+        Pillow==11.3.0
+        psutil==7.0.0
+        scikit_learn==1.7.2
+        scipy==1.16.2
+        skimage==0.0
+        tensorboardX==2.6.4
+        timm==1.0.20
+        torch==2.1.2+cu118
+        torchvision==0.16.2+cu118
+        tqdm==4.65.2
+
