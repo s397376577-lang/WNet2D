@@ -1,0 +1,22 @@
+# Kvasir-SEG training config
+dataset: kvasir
+data_root: data/Kvasir-SEG
+train_images: images
+train_masks: masks
+val_split: 0.1
+
+model: wnet2d
+img_size: 512
+in_channels: 3
+num_classes: 2
+
+optimizer: adam   # adam|sgd
+lr: 0.0003
+weight_decay: 0.0
+batch_size: 8
+epochs: 150
+early_stop_patience: 30
+num_workers: 4
+seed: 42
+
+save_dir: outputs/kvasir

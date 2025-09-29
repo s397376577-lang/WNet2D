@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it.
+title: WNet2D: Multi-Scale and State-Space Enhanced Network for Medical Image Segmentation
+authors:
+  - family-names: Li
+    given-names: Dianyuan
+  - family-names: Li
+    given-names: Qinghua
+  - family-names: Chao
+    given-names: Zhen
+date-released: 2025-09-29
+version: v1.0-camera-ready

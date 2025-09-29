@@ -1,0 +1,13 @@
+torch==2.1.2
+torchvision==0.16.2
+timm>=0.9.12
+mamba-ssm>=1.2.0
+albumentations>=1.4.3
+numpy>=1.24
+Pillow>=10.0
+tqdm>=4.66
+scikit-image>=0.23
+medpy>=0.5.1
+tensorboardX>=2.6
+opencv-python>=4.9
+pyyaml>=6.0.1
