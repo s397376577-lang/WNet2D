@@ -1,5 +1,5 @@
 # WNet2D: Multi-Scale and State-Space Enhanced Network for Medical Image Segmentation
-
+Pretrained checkpoints are not included; results can be reproduced from scratch using the deterministic training recipe and per-image evaluation commands provided below.
 This repository provides a **minimal, reproducible** implementation of **WNet2D** with scripts to:
 - train/evaluate on Kvasir-SEG (and templates for DRIVE/ISIC2017/PH2),
 - reproduce **Table 2** metrics (Dice/Jaccard/95HD/ASD in **pixels**),
