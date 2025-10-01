@@ -11,7 +11,7 @@ Versioning. Camera-ready tag: v1.0-camera-ready (commit 81a39a8).
 
 > Camera-ready tag: **v1.0-camera-ready**
 <p align="center">
-  <img src="arch.png" width="720" alt="WNet2D Architecture">
+  <img src="arch.png" width="720" alt="##WNet2D Architecture">
 </p>
 ## 1. Environment
 ```bash
