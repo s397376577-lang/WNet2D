@@ -1,10 +1,13 @@
 # WNet2D: Multi-Scale and State-Space Enhanced Network for Medical Image Segmentation
-Pretrained checkpoints are not included; results can be reproduced from scratch using the deterministic training recipe and per-image evaluation commands provided below.
-This repository provides a **minimal, reproducible** implementation of **WNet2D** with scripts to:
-- train/evaluate on Kvasir-SEG (and templates for DRIVE/ISIC2017/PH2),
-- reproduce **Table 2** metrics (Dice/Jaccard/95HD/ASD in **pixels**),
-- reproduce **Table 3/5** efficiency numbers with a **unified measurement protocol**,
-- measure latency/FPS/peak GPU memory with **nvidia-smi "Used" (peak reserved)** or **allocated**.
+This repository provides a minimal, reproducible implementation of WNet2D:
+
+Scope. Train/evaluate on Kvasir-SEG (with templates for DRIVE/ISIC2017/PH2), reproduce Table 2 (Dice/Jaccard/95HD/ASD), and reproduce Table 3/5 efficiency numbers under a unified protocol.
+
+What’s included. train.py, eval.py, dataset configs (kvasir.yaml, drive.yaml, isic2017.yaml, ph2.yaml), and a unified measurement utility measure.py.
+
+Environments. Pinned via environment.yml (Conda, CUDA 11.8) and requirements.txt.
+
+Versioning. Camera-ready tag: v1.0-camera-ready (commit 81a39a8).
 
 > Camera-ready tag: **v1.0-camera-ready**
 <p align="center">
