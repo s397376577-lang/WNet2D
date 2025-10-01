@@ -55,9 +55,10 @@ python -m wnet2d.utils.measure --report allocated
 **Protocol.** Latency is the mean per-image inference time (batch size = 1, input = 512×512) over 200 runs after 50 warm-up runs, measured with CUDA events + `cudaDeviceSynchronize()` under **PyTorch 2.1.2 (CUDA 11.8), FP32**. **GPU memory refers to the maximum process memory ("Used") reported by `nvidia-smi`** (equivalently, PyTorch **peak reserved** via `torch.cuda.max_memory_reserved()`). Throughput is **FPS = 1000 / Latency (ms)**.
 
 ## 6. Reproduce tables
-- **Table 2** (Kvasir-SEG): `python -m wnet2d.engine.eval --cfg configs/kvasir.yaml --ckpt checkpoints/wnet2d_kvasir.pth`
-- **Table 3** (4090): `python -m wnet2d.utils.measure --model wnet2d --size 512 --precision fp32 --runs 200 --warmup 50 --report reserved`
-- **Table 5** (Mamba depth sensitivity): use `configs/kvasir_depth{2,3,4}.yaml` then run the same measure command.
+- **Table 2**: `python eval.py --cfg kvasir.yaml --ckpt checkpoints/wnet2d_kvasir.pth`
+- **Table 3** (4090): `python measure.py --model wnet2d --size 512 --precision fp32 --runs 200 --warmup 50 --report reserved`
+- **Table 5** (Mamba depth sensitivity): use `configs/kvasir_depth{1,2,3}.yaml` then run the same measure command.
+```  :contentReference[oaicite:3]{index=3}  
 
 ## 7. Citation
 See `CITATION.cff` or cite the paper once available.
