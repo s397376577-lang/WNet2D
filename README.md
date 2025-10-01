@@ -36,7 +36,7 @@ You can customize paths via YAML configs in `configs/`.
 ## 3. Train (example: Kvasir-SEG)
 ```bash
 python train.py --cfg kvasir.yaml
-```
+
 
 ## 4. Evaluate & export metrics (Dice/IoU/95HD/ASD)
 ```bash
